@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I give you an Asteroid</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Astrologic</h1>
-        <div class="card">
-            <h2 id="question">WAZZZZUP</h2>
-            <div id="button">
-                <button id="Yes" onclick="answerYes()">Yes</button>
-                <button id="no" onclick="answerNo()">no</button>
-            </div>
-        </div>
 
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AstroLogic — Asteroid Classifier</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Website title -->
+        <header>
+            <h1>☄️ AstroLogic</h1>
+            <p>Asteroid Classification System</p>
+        </header>
+
+
+        <!-- Main question card -->
+        <section class="card">
+
+            <h2 id="question">
+                Loading...
+            </h2>
+
+
+            <!-- YES / NO buttons -->
+            <div class="buttons">
+
+                <button id="yesButton">
+                    YES
+                </button>
+
+                <button id="noButton">
+                    NO
+                </button>
+
+            </div>
+            <div id="nasaEyes" style="display: none;">
+                <iframe src="https://eyes.nasa.gov/apps/solar-system/" width="100%" height="700" style="border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+
+            <!-- Result -->
+            <div id="result"></div>
+
+
+            <!-- Restart -->
+            <button id="restartButton">
+                RESTART
+            </button>
+
+        </section>
+
+
+        <!-- Optional information -->
+        <footer>
+            <p>AstroLogic • Astronomy Logic Project</p>
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
     <script src="JS/script.js"></script>
+
 </body>
+
 </html>
