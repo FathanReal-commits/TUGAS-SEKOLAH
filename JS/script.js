@@ -8,73 +8,55 @@ const flowchart = {
 
     // QUESTION 1
     Q1: {
-        question: "WRITE QUESTION 1 HERE",
+        question: "First time using VisualFlow OS?",
         yes: "Q2",
         no: "RESULT 1"
     },
 
     // QUESTION 2
     Q2: {
-        question: "WRITE QUESTION 2 HERE",
+        question: "Do you know how to open the Start Menu?",
         yes: "Q3",
-        no: "RESULT 2"
+        no: "1 Hover your mouse into 4 square",
+        
     },
 
     // QUESTION 3
     Q3: {
-        question: "WRITE QUESTION 3 HERE",
+        question: "Do you know how to open an application?",
         yes: "Q4",
         no: "RESULT 3"
     },
 
     // QUESTION 4
     Q4: {
-        question: "WRITE QUESTION 4 HERE",
+        question: "Do you know how to find and manage your files?",
         yes: "Q5",
         no: "RESULT 4"
     },
 
     // QUESTION 5
     Q5: {
-        question: "WRITE QUESTION 5 HERE",
+        question: "Do you know how to change your system settings?",
         yes: "Q6",
         no: "RESULT 5"
     },
 
     // QUESTION 6
     Q6: {
-        question: "WRITE QUESTION 6 HERE",
+        question: "Do you know how to connect VisualFlow OS to Wi-Fi?",
         yes: "Q7",
         no: "RESULT 6"
     },
 
     // QUESTION 7
     Q7: {
-        question: "WRITE QUESTION 7 HERE",
+        question: "Do you know how to safely shut down VisualFlow OS?",
         yes: "Q8",
         no: "RESULT 7"
     },
 
-    // QUESTION 8
-    Q8: {
-        question: "WRITE QUESTION 8 HERE",
-        yes: "Q9",
-        no: "RESULT 8"
-    },
 
-    // QUESTION 9
-    Q9: {
-        question: "WRITE QUESTION 9 HERE",
-        yes: "Q10",
-        no: "RESULT 9"
-    },
-
-    // QUESTION 10
-    Q10: {
-        question: "WRITE QUESTION 10 HERE",
-        yes: "RESULT 10",
-        no: "RESULT 11"
-    }
 };
 
 
@@ -112,11 +94,15 @@ function choose(next) {
 
 function showResult(resultText) {
 
-    question.textContent = "🔭 Classification Complete";
+    question.textContent = "Solution";
 
     result.textContent = resultText;
-if (resultText === "RESULT 1") {
-        document.getElementById("nasaEyes").style.display = "block";
+if (resultText === "1 Hover your mouse into 4 square") {
+        document.getElementById("Q1").style.display = "block";
+    }
+
+if (resultText === "RESULT 2") {
+        document.getElementById("Q1").style.display = "block";
     }
     yesButton.style.display = "none";
     noButton.style.display = "none";

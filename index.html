@@ -6,21 +6,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AstroLogic — Asteroid Classifier</title>
+    <title>Flux 900.</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="Style/Style.css">
 </head>
 
 <body>
+    <nav class="navbar">
 
+        <h1>Visualflow®</h1>
+        <p>System setup Assistant</p>
+
+    </nav>
     <main class="container">
 
+
         <!-- Website title -->
-        <header>
-            <h1>☄️ AstroLogic</h1>
-            <p>Asteroid Classification System</p>
-        </header>
+
 
 
         <!-- Main question card -->
@@ -35,6 +38,7 @@
             <div class="buttons">
 
                 <button id="yesButton">
+
                     YES
                 </button>
 
@@ -44,10 +48,18 @@
 
             </div>
             <div id="nasaEyes" style="display: none;">
-                <iframe src="https://eyes.nasa.gov/apps/solar-system/" width="100%" height="700" style="border: none;"
-                    allowfullscreen>
-                </iframe>
+                <iframe src="https://eyes.nasa.gov/apps/solar-system/#/81p_wild_2?logo=false&lighting=natural"
+                    allowfullscreen></iframe>
             </div>
+            <div id="nasaEyes" style="display: none;">
+                <iframe
+                    src="https://eyes.nasa.gov/apps/solar-system/#/243_ida?logo=false&surfaceMapTiling=true&hd=true&lighting=natural"
+                    allowfullscreen></iframe>
+            </div>
+
+            <video id="Q1" width="640" height="360" style="display: none;" autoplay muted loop controls>
+                <source src="/assets/Q1.webm" type="video/webm">
+            </video>
 
 
             <!-- Result -->
@@ -61,10 +73,10 @@
 
         </section>
 
-
+        <hr>
         <!-- Optional information -->
         <footer>
-            <p>AstroLogic • Astronomy Logic Project</p>
+            <p>Visualflow | System setup Assistant</p>
         </footer>
 
     </main>
