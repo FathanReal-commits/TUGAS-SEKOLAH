@@ -55,6 +55,13 @@ body {
 
 }
 
+.buttons button :hover{
+
+    margin: 4cm;
+
+}
+
+
 #question {
     animation: appear 1s ease;
 }
